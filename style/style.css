@@ -1,4 +1,73 @@
-#test{
-    color: green;
-    font-size: 35px;
+header{
+    width: 100%;
+    height: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+.menu__top {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; 
+    width: 1400px;
+    margin: auto;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.menu__top__left > ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.menu__top__left > ul > li {
+    align-self: center;
+    padding: 1rem 0 1rem 0;
+    margin-right: 2.9rem;
+}
+.menu__top__left > ul > li .material-symbols-outlined  {
+    transform: rotateZ(90deg);
+    font-size: 20px;
+    font-weight: 700;
+    height: 19px;
+    width: 19px;
+}
+.menu__top__right > ul{
+    display: flex;
+    width: 100%;
+    height: 96px;
+    justify-content: space-around;
+}
+.menu__top__right > ul > li {
+    align-self: center;
+    padding: 1rem 0 1rem 0;
+    margin-right: 2.9rem;
+    position: relative;
+}
+.menu__top__right > ul > li .material-symbols-outlined  {
+    font-size: 20px;
+    font-weight: 700;
+    height: 19px;
+    width: 19px;
+    
+}
+.menu__top__right > ul > li .material-symbols-outlined ::after  {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  top: 5px;
+  
+}
+.menu__top__right > ul > li >button{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: none;
+    display: flex;
+    
+}
+.menu__top__right > ul > li >button > p{
+    color: #1CE783;
+    margin-left: 5px;
 }
