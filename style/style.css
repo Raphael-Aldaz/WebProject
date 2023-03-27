@@ -41,33 +41,50 @@ header{
 }
 .menu__top__right > ul > li {
     align-self: center;
-    padding: 1rem 0 1rem 0;
-    margin-right: 2.9rem;
-    position: relative;
+    
+    
+    
 }
 .menu__top__right > ul > li .material-symbols-outlined  {
     font-size: 20px;
     font-weight: 700;
     height: 19px;
     width: 19px;
-    
+    border-right: 1px solid black;
+    padding-right: 50px;
+    margin-right: 50px;
 }
-.menu__top__right > ul > li .material-symbols-outlined ::after  {
-  content: "";
-  width: 50px;
-  height: 50px;
-  background-color: black;
-  position: absolute;
-  top: 5px;
-  
-}
-.menu__top__right > ul > li >button{
+.hulu__link{
     padding: 0.5rem 1rem 0.5rem 1rem;
-    border: none;
-    display: flex;
-    
+    margin-right: 2px;
+    background-color: #f4f4f4;
+    border: 2px solid transparent;
 }
-.menu__top__right > ul > li >button > p{
-    color: #1CE783;
+.hulu__link > a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    color: #636363;
+    text-decoration: none;
+}
+.hulu__logo{
+    width: 33px;
     margin-left: 5px;
+}
+.hulu__link:hover{
+    cursor: pointer;
+    border: 2px solid #cecfcf;  
+}
+.hulu__link > a:hover{
+    cursor: pointer;
+    color: #002d6c; 
+}
+.menu__bottom{
+    width: 1400px;
+    margin: auto;
+}
+.menu__bottom > ul {
+    display: flex;
+    justify-content: flex-start;
 }
