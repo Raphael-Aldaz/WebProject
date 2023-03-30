@@ -165,7 +165,7 @@ padding: 20px 10px 0;
     height: 515px;
     margin: 10px 0px 10px 0px;
     padding: 0 10px 0 10px; */
-    padding: 10px;
+    padding: 0 2em 0 0;
     border-right: 1px solid #dcdddf;
     flex: 0 1 auto;
     margin:0rem 0.5rem 1rem 0.5rem;
@@ -552,16 +552,88 @@ SECOND BANDEAU
 }
 /*********************************************************************
 3eme bandeau
-**********************************************************************/
+ouiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 
+
+**********************************************************************/
+.bandeau {
+    flex:auto;
+   display: flex;
+   max-width: 1400px;
+padding: 20px 10px 0;
+   /* justify-content: space-between;  */
+
+}
+.bandeau__item{
+    /*define widht of one item*/
+    /*to put text or imgBlock*/
+
+    /* width: 100%; */
+    position: relative;
+    /* width: 439px; */
+    /* margin: 0 10px; */
+    flex: 0 1 auto; 
+    margin:0rem 0.5rem 1rem 0.5rem;
+}
+.bandeau__imgblock__title {
+    /* width: 439px; */
+    background-color: transparent;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, .9)));
+    background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, .9));
+    background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, .9));
+    bottom: 0;
+    left: 0;
+    line-height: 24px;
+    padding-top: 6%;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    /*affiche les sous elements de haut en bas, tassés en bas*/
+    align-content:flex-end;
+}
+.bandeau__imgblock__title>img {
+    width: 439px;
+    height: 608px;
+}
+
+.bandeau__imgblock__title>h1 {
+    color: white;
+    font-family: SansSerifFont, sans-serif;
+    left: 10px;
+    margin: 20px 20px 10px;
+}
+
+.subtitle {
+    color: white;
+    font-family: SansSerifFont, sans-serif;
+    left: 10px;
+    margin: 20px 10px 10px;
+    font-size: 0.8rem;
+    
+}
+
+.date {
+    color: #777;
+    font-family: SansSerifFont, sans-serif;
+    font-size: 13px;
+    left: 10px;
+    margin: 20px 20px 10px;
+}
+.credit {
+    color: #777;
+    font-family: SansSerifFont, sans-serif;
+    font-size: 13px;
+    left: 10px;
+    margin: 20px 20px 10px;
+}
 /*********************************************************************
 CAROUSEL
 **********************************************************************/
  .carousel__contener {
     border-top: 1px solid #ccc;
     color: #656565;
-    margin-left:10%;
-    width: 80%;
+/*     margin-left:10%;
+    width: 80%; */
 } 
 
 .carousel{
