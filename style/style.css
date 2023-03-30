@@ -139,14 +139,22 @@ MAIN
 FIRST BANDEAU
 **********************************************************************/
 main {
-    position: relative;
-    top: 100px;
-    margin-left: 251.5px;
+     /* position: relative; */
+    /* top: 100px; */
+    /* margin-left: 251.5px; */ 
+    margin-left:10%;
+    width: 80%;
+    display:flex;
+    align-items:center
 }
+.first__bandeau {
+     flex:auto;
+    display:flex; 
 
-.homePage__first_bandeau {
-    display: flex;
 }
+/* .homePage__first_bandeau {
+    display: flex;
+} */
 
 .firstBlock {
     width: 365px;
@@ -154,7 +162,8 @@ main {
     margin: 10px 0px 10px 0px;
     padding: 0 10px 0 10px;
     border-right: 1px solid #dcdddf;
-
+/*     flex: 0 1 auto;
+    margin:0rem 0.5rem 1rem 0.5rem; */
 }
 
 .firstBlock>ul>li {
@@ -180,6 +189,8 @@ main {
     height: 476.25px;
     padding: 0 10px;
     margin: 10px 0;
+/*     flex: 0 1 auto;
+    margin:0rem 0.5rem 1rem 0.5rem; */
 }
 
 .secondBlock__picture {
@@ -256,6 +267,8 @@ main {
     border-left: 1px solid #e5e5e5;
     height: 515.25px;
     width: 420px;
+/*     flex: 0 1 auto;
+    margin:0rem 0.5rem 1rem 0.5rem; */
 }
 
 .thirdBlock__top__picture>img {
@@ -328,7 +341,7 @@ main {
 
 .thirdBlock__bottom {
     color: #656565;
-    display: block;
+    /* display: block; */
     font-size: 14px;
     line-height: 17px;
     text-decoration: none;
@@ -376,18 +389,22 @@ MAIN
 SECOND BANDEAU
 **********************************************************************/
 .second__bandeau {
+    flex:auto;
     display: flex;
+    /* justify-content: space-between; */
+    
 }
 
 .second__bandeau__firstBlock {
     border-right: 1px solid #e5e5e5;
     width: 459px;
+    /* flex: 0 1 auto; */
 }
 
 .second__bandeau__firstBlock>h1 {
     border-bottom: 0;
     border-top: 1px solid #ccc;
-    padding: 20px 0 25px;
+    padding: 20px 0 2 5px;
     color: #656565;
     font-size: 24px;
     font-weight: 400;
@@ -469,7 +486,7 @@ SECOND BANDEAU
 }
 
 .second__bandeau__secondBlock {
-    position: relative;
+    /* position: relative; */
     width: 439px;
     margin: 0 10px;
 }
@@ -510,7 +527,7 @@ SECOND BANDEAU
 }
 
 .second__bandeau__thirdBlock {
-    position: relative;
+    /* position: relative; */
     width: 438px;
 }
 
