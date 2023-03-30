@@ -524,146 +524,55 @@ SECOND BANDEAU
 /*********************************************************************
 CAROUSEL
 **********************************************************************/
-.carousel__politics__contener {
+ .carousel__contener {
     border-top: 1px solid #ccc;
     color: #656565;
-    width: 100%;
-}
+    margin-left:10%;
+    width: 80%;
+} 
 
-.carousel__politics__title {
-    font-size: 18px;
-    font-weight: 300;
-    margin: 1rem 0.5rem 1rem 0.5rem;
-    font-family: SansSerifFont, sans-serif;
-}
-
-.carousel {
-    width: 1400px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+.carousel{
+    width: 100%; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
     display: flex;
     justify-content: space-between;
 }
-
 .carousel__img {
     width: 100%;
     height: auto;
-}
-
-.carousel__politics__01 {
+    margin-bottom: 3%;
+  }
+.carousel__item {
     flex: 0 1 auto;
-    margin: 1rem 0.5rem 1rem 0.5rem;
-}
+    margin:0rem 0.5rem 1rem 0.5rem;
 
-.carousel__politics__arrow {
-    flex: 0 1 auto;
 }
-
-.carousel__politics__videoTitle {
-    color: #000;
-    font-family: TiemposHeadline, Georgia, Times New Roman, Times, serif;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 21px;
-    text-align: left;
-}
-
-.carousel__politics__arrow {
+.carousel__arrow{
     position: absolute;
-    background-color: #c0c0c0;
-    margin: 0.5rem 0.5rem 0rem 0.5rem;
-    height: 39px;
-    line-height: 1;
-    width: 39px;
-    float: right;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgb(136, 125, 125);
+/* margin: 0.5rem 0rem 0.5rem 0.5rem; */
+     /* height: 39px; */
+    /* width: 39px; */ 
+z-index: 1;
+margin-left: 78.5%;
+margin-top: 55px;
+}
+.carousel__title {
+font-size: 18px;
+font-weight: 300;
+margin:1rem 0.5rem 1rem 0.5rem;
+font-family: SansSerifFont,sans-serif;
+
 }
 
-/*********************************************************************
-FOOTER
-**********************************************************************/
-footer {
-    width: 1400px;
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+.carousel__videoTitle {
+color: #000;
+font-family: TiemposHeadline,Georgia,Times New Roman,Times,serif;
+font-size: 15px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 21px;
+text-align: left;
 }
 
-.footer__top {
-    list-style-type: none;
-    display: flex;
-    width: 1400px;
-    margin: auto;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-}
-
-.footer__top__logo {
-    align-content: flex-end;
-    display: left;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.footer__top__returnTop {
-    text-align: right;
-    padding: 1rem 0 1rem 0;
-    margin-right: 2.9rem;
-    font-weight: 700;
-    font-size: 12px;
-}
-
-.footer__middle {
-    border-top: 1px solid #f2f2f2;
-    font-size: 20px;
-}
-
-.footer__middle__allArray {
-    margin-top: 10px;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.footer__middle__headingArray>tr>th {
-    text-align: left;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1.6px;
-    line-height: 1.4;
-    padding-bottom: 13px;
-    text-transform: uppercase;
-    margin: 0.5rem 1rem 0.5rem 1rem;
-}
-
-.footer__middle__bodyArray>tr>td {
-    font-size: 14px;
-    line-height: 1.2;
-    margin: 0;
-    padding-bottom: 13px;
-    width: 25%;
-}
-
-.footer__bottom {
-    border-top: 1px solid #f2f2f2;
-    line-height: 1.75;
-}
-
-.footer__bottom__copyright__left {
-    font-size: 12px;
-    font-style: normal;
-    line-height: 16px;
-    color: #c1c1c1;
-    text-decoration: none;
-    text-align: left;
-    width: 50%;
-}
-
-.footer__bottom__copyright__right {
-    font-size: 12px;
-    font-style: normal;
-    line-height: 16px;
-    color: #c1c1c1;
-    text-decoration: none;
-    text-align: right;
-}
