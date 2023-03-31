@@ -597,6 +597,7 @@ position: relative;
     z-index: 2;
     /*affiche les sous elements de haut en bas, tassés en bas*/
     align-content:flex-end;
+    padding: 0 0 12px;
 }
 .bandeau__imgblock__title>img {
     width: 439px;
@@ -610,6 +611,9 @@ position: relative;
     margin: 20px 20px 10px;
     font-size: 24px;
 }
+.textBlock>H2{
+    font-size: 24px;
+}
 
 .subtitle {
     color: white;
@@ -619,7 +623,13 @@ position: relative;
     font-size: 0.8rem;
     
 }
-
+.bandeau__imgblock__title>ul>li>h2{
+    color: white;
+    font-family: SansSerifFont, sans-serif;
+    left: 10px;
+    margin: 10px 20px 10px;
+    font-size: 0.8rem;
+}
 .date {
     color: #777;
     font-family: SansSerifFont, sans-serif;
@@ -679,6 +689,7 @@ position: relative;
      left: 10px;
      bottom: 0;
      width: 1380px;
+     padding: 0 0 12px;
  }
  .homePage__bandeau__big__title>h1{
      font-size: 31px;
@@ -733,6 +744,7 @@ CAROUSEL
  .carousel__contener {
     border-top: 1px solid #ccc;
     color: #656565;
+    
 /*     margin-left:10%;
     width: 80%; */
 } 
