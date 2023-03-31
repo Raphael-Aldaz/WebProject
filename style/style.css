@@ -701,6 +701,31 @@ NINTH BANDEAU
 
 /*********************************************************************
 MAIN
+FIFTH BANDEAU ADVERTISEMENT
+**********************************************************************/
+.pub__img {
+    width: auto;
+    height: auto;
+    margin-bottom: 1%;
+}
+
+.pub__title {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Proxima-Nova, Arial, Helvetica, sans-serif;
+    color:#000;
+}
+
+.addon {
+    display:flex;
+    align-items: end;
+    justify-content: flex-end;  
+    font-size: 12px;
+    right: 0px;
+}
+
+/*********************************************************************
+MAIN
 CAROUSEL
 **********************************************************************/
 .carousel__contener {
