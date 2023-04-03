@@ -131,14 +131,22 @@ header {
     line-height: 24px;
     opacity: 0.9;
 }
-
+.test>ul>li>h3>a{
+text-decoration: none;
+    color: black;
+    font-weight: 400;
+    line-height: 19px;
+    overflow: hidden;
+}
+    .test>ul>li>h3>a:hover {
+}
 /*********************************************************************
 MAIN
 FIRST BANDEAU
 **********************************************************************/
 main {
     position: relative;
-    top: 100px;
+    top: 20px;
     margin-left: 251.5px;
     margin-right: 251.5px;
 }
@@ -147,14 +155,15 @@ main {
     flex: auto;
     display: flex;
     max-width: 1400px;
-    padding: 20px 10px 0;
+    padding: 20px 0 20px;
+
 }
 
 .textBlock {
-    padding: 0 2em 0 0;
+    padding: 0 10px;
     border-right: 1px solid #dcdddf;
     flex: 0 1 auto;
-    margin: 0rem 0.5rem 1rem 0.5rem;
+    width: 100%;
 }
 
 .textBlock>ul>li {
@@ -177,7 +186,9 @@ main {
 
 .secondBlock {
     flex: 0 1 auto;
-    margin: 0rem 0.5rem 1rem 0.5rem;
+    border-right: 1px solid #dcdddf;
+    padding: 0 10px;
+
 }
 
 .secondBlock__picture {
@@ -185,7 +196,7 @@ main {
 }
 
 .secondBlock__picture>img {
-    height: 299.25px;
+    height: 299px;
 }
 
 .credit {
@@ -200,7 +211,6 @@ main {
     right: 0;
     text-align: right;
     z-index: 50;
-    bottom: 0px;
 }
 
 .news__title {
@@ -212,7 +222,15 @@ main {
     line-height: 28px;
     margin-bottom: 11px;
 }
-
+.news__title>a{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+}
+.news__title>a:hover{
+    text-decoration: underline; 
+}
 .news__text {
     display: flex;
     flex-direction: column;
@@ -222,7 +240,6 @@ main {
     height: auto;
 }
 
-.news__subtitle,
 .news__published {
     height: 19px;
     padding-bottom: 10px;
@@ -249,7 +266,8 @@ main {
 
 .thirdBlock {
     flex: 0 1 auto;
-    margin: 0rem 0.5rem 1rem 0.5rem;
+   padding: 0 10px;
+   position: relative;
 }
 
 .thirdBlock__top__picture>img {
@@ -371,13 +389,13 @@ SECOND BANDEAU
     flex: auto;
     display: flex;
     max-width: 1400px;
-    padding: 20px 10px 0;
+    padding: 20px 0 20px;
 }
 
 .second__bandeau__firstBlock {
     border-right: 1px solid #e5e5e5;
     flex: 0 1 auto;
-    margin: 0rem 0.5rem 1rem 0.5rem;
+    padding: 0 10px;
 }
 
 .second__bandeau__firstBlock>h1 {
@@ -389,6 +407,7 @@ SECOND BANDEAU
     font-weight: 400;
     letter-spacing: 0;
     line-height: 24px;
+    padding: 20px 0 25px;
 }
 
 .second__bandeau__firstBlock__video {
@@ -436,7 +455,6 @@ SECOND BANDEAU
     font-size: 20px;
     text-shadow: 0 1px 1px #222;
 }
-
 .second__bandeau__firstBlock__listArticles__item {
     border-top: 1px solid #e5e5e5;
     width: 438px;
@@ -454,7 +472,16 @@ SECOND BANDEAU
     width: 378px;
     height: 36px;
 }
+.second__bandeau__firstBlock__listArticles__item>h1>a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+}
 
+.second__bandeau__firstBlock__listArticles__item>h1>a:hover {
+    text-decoration: underline;
+}
 .duration {
     display: flex;
     justify-content: space-between;
@@ -464,7 +491,6 @@ SECOND BANDEAU
     height: 18px;
     color: #aaa;
 }
-
 .second__bandeau__secondBlock {
     position: relative;
     flex: 0 1 auto;
@@ -498,8 +524,16 @@ SECOND BANDEAU
     margin: 20px 20px 10px;
     font-size: 24px;
 }
+.second__bandeau__secondBlock__title>h1>a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
 
-.second__bandeau__secondBlock__title>p {
+.second__bandeau__secondBlock__title>h1>a:hover {
+    text-decoration: underline;
+}
+.date {
     color: #777;
     font-family: SansSerifFont, sans-serif;
     font-size: 13px;
@@ -523,8 +557,16 @@ SECOND BANDEAU
     font-size: 14px;
     font-weight: 300;
     text-shadow: 0 1px 1px #222;
+    margin: 10px 20px 10px;
 }
-
+.additional__information>a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.additional__information>a:hover {
+    text-decoration: underline;
+}
 /*********************************************************************
 MAIN
 THIRD BANDEAU
@@ -543,13 +585,9 @@ ELEVENTH BANDEAU
     flex: 0 1 auto;
     margin: 0rem 0.5rem 1rem 0.5rem;
 }
-
-.borderRight {
-    border-right: 1px solid #ccc;
-}
-
-.width33 {
-    width: 33.3%;
+.bandeau__item>img {
+    width: 438px;
+    height: 508px;
 }
 
 .bandeau__imgblock__title {
@@ -564,18 +602,13 @@ ELEVENTH BANDEAU
     position: absolute;
     right: 0;
     z-index: 2;
-    align-content: flex-end;
+    justify-content: flex-end;
 }
 
 .bandeau__imgblock__title__logo {
     max-width: 32px;
     max-height: 32px;
     margin: 20px 20px 10px;
-}
-
-.bandeau__imgblock__title>img {
-    width: 439px;
-    height: 608px;
 }
 
 .bandeau__imgblock__title>h1 {
@@ -585,7 +618,20 @@ ELEVENTH BANDEAU
     margin: 20px 20px 10px;
     font-size: 24px;
 }
-
+.bandeau__imgblock__title>h1>a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+}
+.bandeau__imgblock__title>h1>a:hover {
+    text-decoration: underline;
+}
+.textBlock>H2{
+    font-size: 24px;
+    padding: 20px 0 25px;
+    border-top: 1px solid #ccc;
+}
 .subtitle {
     color: white;
     font-family: SansSerifFont, sans-serif;
@@ -593,7 +639,34 @@ ELEVENTH BANDEAU
     margin: 20px 10px 10px;
     font-size: 0.8rem;
 }
-
+.subtitle>a {
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    overflow: hidden;
+}
+.subtitle>a:hover {
+    text-decoration: underline;
+}
+.bandeau__imgblock__title>ul{
+    color: white;
+    font-family: SansSerifFont, sans-serif;
+    left: 10px;
+    margin: 0px 20px 20px;
+    font-size: 0.8rem;
+}
+.bandeau__imgblock__title>ul>li{
+    padding: 0 0 12px;
+}
+.bandeau__imgblock__title>ul>li>h2>a{
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    overflow: hidden;
+}
+.bandeau__imgblock__title>ul>li>h2>a:hover{
+    text-decoration: underline;
+}
 .date {
     color: #777;
     font-family: SansSerifFont, sans-serif;
@@ -601,7 +674,18 @@ ELEVENTH BANDEAU
     left: 10px;
     margin: 20px 20px 10px;
 }
+.bandeau__item4 {
+    position: relative;
+    flex: 0 1 auto;
+    margin: 0rem 0.5rem 1rem 0.5rem;
+    
+}
 
+.bandeau__item4>img {
+    width: 438px;
+    height: 508px;
+    
+}
 /*********************************************************************
 MAIN
 MORE NEWS FOLLOWING
@@ -659,18 +743,32 @@ BIG PICTURE
     font-size: 31px;
     margin: 20px 20px 10px;
 }
-
+.homePage__bandeau__big__title>h1>a {
+    text-decoration: none;
+    overflow: hidden;
+    color: white;
+}
+.homePage__bandeau__big__title>h1>a:hover {
+    text-decoration: underline;
+}
 .homePage__bandeau__big__title>p {
     color: #777;
     font-size: 13px;
     margin: 20px 20px 10px;
 }
 
-.homePage__bandeau__big__title>ul>li>h2 {
+.homePage__bandeau__big__title>ul>li {
     font-size: 14px;
     margin: 20px 20px 20px;
 }
-
+.homePage__bandeau__big__title>ul>li>h2>a {
+    text-decoration: none;
+    overflow: hidden;
+    color: white;
+}
+.homePage__bandeau__big__title>ul>li>h2>a:hover {
+    text-decoration: underline;
+}
 /*********************************************************************
 MAIN
 EIGHTH BANDEAU
@@ -680,11 +778,12 @@ NINTH BANDEAU
     position: relative;
     flex: 0 1 auto;
     margin: 0rem 0.5rem 1rem 0.5rem;
+    border-right: 1px solid #ccc;
 }
 
 .bandeau__item2>img {
     width: 899px;
-    height: 505px;
+    height: 509px;
 }
 
 .bandeau__item3 {
@@ -704,7 +803,7 @@ MAIN
 FIFTH BANDEAU ADVERTISEMENT
 **********************************************************************/
 .pub__img {
-    width: auto;
+    width: 253px;
     height: auto;
     margin-bottom: 1%;
 }
@@ -715,7 +814,15 @@ FIFTH BANDEAU ADVERTISEMENT
     font-family: Proxima-Nova, Arial, Helvetica, sans-serif;
     color:#000;
 }
-
+.pub__title>a {
+    font-size: 18px;
+    text-decoration: none;
+    overflow-x: hidden;
+    color: black;    
+}
+.pub__title>a:hover {
+    text-decoration: underline;   
+}
 .addon {
     display:flex;
     align-items: end;
@@ -731,6 +838,7 @@ CAROUSEL
 .carousel__contener {
     border-top: 1px solid #ccc;
     color: #656565;
+    padding: 20px 10px 0;
 }
 
 .carousel {
@@ -756,12 +864,12 @@ CAROUSEL
     background-color: #ffffff;
     box-shadow: 0px 0px 5px rgb(136, 125, 125);
     z-index: 1;
-    margin-left: 78.5%;
-    margin-top: 55px;
+    margin-left: 97%;
+    margin-top: 75px;
 }
 
 .carousel__title {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 300;
     margin: 1rem 0.5rem 1rem 0.5rem;
     font-family: SansSerifFont, sans-serif;
@@ -776,42 +884,59 @@ CAROUSEL
     line-height: 21px;
     text-align: left;
 }
+.carousel__videoTitle>a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+}
 
+.carousel__videoTitle>a:hover {
+    text-decoration: underline;
+}
 /*********************************************************************
 FOOTER
 **********************************************************************/
 footer {
-    width: 1400px;
-    margin: auto;
+    max-width: 1400px;
+    margin-left: 252px;
+    margin-right: 252px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    position:relative;
+    position: absolute;
+    padding: 20px;
 }
 
 .footer__top {
     list-style-type: none;
     display: flex;
-    width: 1400px;
-    margin: auto;
+    width: 100%;
     font-style: normal;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    height: 91.8px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 13px;
 }
-
+.footer__top__returnTop>h2>a{
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+}
+.footer__top__returnTop>h2>a:hover{
+    text-decoration: underline;
+}
 .footer__top__logo {
-    align-content: flex-end;
     display: left;
-    width: 100%;
-    justify-content: space-around;
 }
 
 .footer__top__returnTop {
     text-align: right;
-    padding: 1rem 0 1rem 0;
-    margin-right: 2.9rem;
     font-weight: 700;
     font-size: 12px;
+    margin: 0;
 }
 
 .footer__middle {
@@ -843,10 +968,18 @@ footer {
     padding-bottom: 13px;
     width: 25%;
 }
-
+.footer__middle__bodyArray>tr>td>a {
+    text-decoration: none;
+    overflow: hidden;
+    color: black;
+}
+.footer__middle__bodyArray>tr>td>a:hover {
+    text-decoration: underline;
+}
 .footer__bottom {
     border-top: 1px solid #f2f2f2;
-    line-height: 1.75;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer__bottom__copyright__left {
@@ -856,7 +989,6 @@ footer {
     color: #c1c1c1;
     text-decoration: none;
     text-align: left;
-    width: 50%;
 }
 
 .footer__bottom__copyright__right {
